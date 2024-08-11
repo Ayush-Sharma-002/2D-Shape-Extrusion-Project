@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+
+    <meta charset="UTF-8">
+    
+
+    <title>2D - Extrusion & Manipulation</title>
+    
+
+    <script src="https://cdn.babylonjs.com/babylon.max.js"></script>
+    <!-- Imports the Babylon.js library, which is used for 3D rendering -->
+
+    <script src="https://cdn.babylonjs.com/materialsLibrary/babylon.gridMaterial.js"></script>
+    <!-- Imports the Babylon.js grid material, which is used to create grid patterns on surfaces -->
+
+    <script src="https://unpkg.com/earcut@2.1.1/dist/earcut.min.js"></script>
+    <!-- Imports the Earcut library, which is used for polygon triangulation in 3D shapes -->
+
+    <link rel="stylesheet" href="styles.css">
+ 
+
+</head>
+
+<body>
+
+
+    <button onclick="enterDrawMode()" id="drawMode">Draw</button>
+    <!-- A button that, when clicked, activates the drawing mode to draw 2D shapes -->
+
+    <button onclick="extrudeShape()">Extrude</button>
+    <!-- A button that, when clicked, extrudes the drawn 2D shapes into 3D objects -->
+
+    <button onclick="enterMoveMode()">Move</button>
+    <!-- A button that, when clicked, activates the mode to move the 3D objects -->
+
+    <button onclick="enterVertexEditMode()">Vertex Edit</button>
+    <!-- A button that, when clicked, activates the mode to edit the vertices of the 3D objects -->
+
+    <canvas id="myCanvas"></canvas>
+    <!-- The canvas element where the 3D scene will be rendered by Babylon.js -->
+
+    <script src="app.js"></script>
+    <!-- Links to the JavaScript file that contains the logic for the 3D scene and interactions -->
+
+</body>
+
+</html>
